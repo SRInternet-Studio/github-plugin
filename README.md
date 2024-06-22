@@ -1,16 +1,30 @@
-# Yunzai-Github-Event
-![F756619176FDC707BBBB9B233DCAC896](https://user-images.githubusercontent.com/21212372/228231656-4e6c65d1-7e63-4037-a30f-9cf8e9fe46da.gif)
+# Github-Plugin
 
-github event plugin for Yunzai
+适用于Yunzai-V3及其衍生机器人框架的Github事件推送插件
 
-使yunzai机器人能够接收到**自己**仓库的更新。基于github的webhook
+使Yunzai-v3系列机器人能够接收到**自己和自己所在组织中具有Admin权限**的仓库的更新。基于Github的Webhook功能。
 
-应该很少有人用的上吧？就不写README咯。
+感谢 @ikechan8370 大佬的原作，本插件基于他的代码进行改进，调整和补充。
 
-Just Kidding！😂
+## 安装教程 💡
 
+请将Github-Plugin放置在Yunzai-Bot的plugins目录下，重启Yunzai-Bot后即可使用。
+
+1. 推荐使用git进行安装，以方便后续升级。在Yunzai目录打开终端，运行
+
+- 使用github (国外服务器推荐)
+```sh
+git clone https://github.com/jiangyin14/github-plugin.git ./plugins/github-plugin
 ```
-git clone https://github.com/ikechan8370/Yunzai-Github-Event.git .\plugins\github
+- 使用ghproxy (国内服务器推荐)
+```sh
+git clone https://mirror.ghproxy.com/https://github.com/jiangyin14/github-plugin.git ./plugins/github-plugin
+```
+
+2. 安装依赖
+
+```sh
+pnpm install
 ```
 
 然后添加一个webhook，大概是`http://[ip]:[端口号默认59008]/github-webhook`
